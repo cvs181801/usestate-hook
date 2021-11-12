@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <h1>{number}</h1>
       <button
-        onClick={()=>setNumber(prevNumber => prevNumber++)}
+        onClick={()=>setNumber(prevNumber => prevNumber+1)} //using the ++ operator didn't work here FYI
       >
         Change!
       </button>
