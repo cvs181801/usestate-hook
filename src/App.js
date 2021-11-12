@@ -9,7 +9,12 @@ function App() {
       <button
         onClick={()=>setNumber(prevNumber => prevNumber+1)} //using the ++ operator didn't work here FYI
       >
-        Change!
+        Count Up!
+      </button>
+      <button
+        onClick={()=>setNumber(prevNumber => prevNumber-1)}
+      >
+        Count Down!
       </button>
     </div>
   );
