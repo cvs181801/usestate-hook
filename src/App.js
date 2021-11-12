@@ -18,8 +18,9 @@ function App() {
       >
         Count Down!
       </button>
-      <p> Learning React Hooks I'm like...{word}</p>
+      <div > Learning React Hooks I'm like...<p className="word">{word}</p></div>
       
+    
     </div>
   );
 }
