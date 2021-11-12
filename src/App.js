@@ -20,7 +20,17 @@ function App() {
       </button>
       <div > Learning React Hooks I'm like...<p className="word">{word}</p></div>
       
-    
+    <button
+      onClick={()=>setNumber(prevNumber => prevNumber / 2)}
+    >
+      Divide in Half
+    </button>
+
+    <button
+      onClick={()=> setNumber(prevNumber => prevNumber * 2)}
+    >
+      Multiply by 2
+    </button>
     </div>
   );
 }
