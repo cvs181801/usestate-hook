@@ -1,23 +1,23 @@
 import './App.css';
 import React, {useState, useEffect} from 'react'
-import Randomcolor from 'randomcolor'
+import Randomcolor from "randomcolor"
 
 function App() {
   const [number, setNumber] = useState(0)
   const [word, setWord] = useState("WOW")
-  //var color = randomColor();
   const [randomcolor, setRandomcolor] = useState('')
   
 
-   useEffect(() => {
-    setRandomcolor(randomColor())
+  useEffect(() => {
+    setRandomcolor("hotPink")
   }, [number])
 
   return (
     <div className="App">
-      <h1>{number}</h1>
-      <button
+      <h1
         style={{color: randomcolor}}
+      >{number}</h1>
+      <button
         onClick={()=>setNumber(prevNumber => prevNumber+1)} //using the ++ operator didn't work here FYI
       >
         Count Up!
